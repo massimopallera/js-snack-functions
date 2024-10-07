@@ -4,10 +4,16 @@ const myName = 'Mario';
 
 
 // Dichiara la funzione qui.
-const saluto = str => `Ciao ${str}`
+
+function logMessage(str){
+    console.log(`Ciao ${str}`);
+}
+
+const msg = str => `Ciao ${str}`
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(saluto(myName));
+logMessage(myName)
+console.log(msg(myName));
 
 
 
