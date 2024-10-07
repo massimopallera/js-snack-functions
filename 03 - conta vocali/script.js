@@ -2,7 +2,6 @@
 
 const word = 'javascript';
 
-
 // Dichiara la funzione qui.
 function countVocals(str){
     const vocals = ['a','e','i','o','u']
@@ -19,9 +18,22 @@ function countVocals(str){
     return count
 }
 
+const countVocalsArrow = (str) => {
+    let count = 0
+    const vocals = ['a','e','i','o','u']
+
+    for (let i = 0; i < str.length; i++){
+        if (vocals.includes(str.charAt(i))){
+            count++
+        }
+    }
+    return count
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 const count = countVocals(word)
 console.log(count);
+console.log(countVocalsArrow(word));
 
 
 
