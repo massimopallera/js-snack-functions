@@ -7,6 +7,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // const userInput = 'A'
 const userInput = prompt('Inserisci carattere:')
 
+function startWithChar(char, array){
+    let new_array = []
+
+    for (let i = 0; i < array.length; i++){
+        if (array[i][0] === char){
+            new_array.push(array[i])
+        }
+    }
+
+    return new_array
+}
+
+
 const namesStartWithChar = (char, array) => {
     let new_array = []
     for (let i = 0; i < array.length; i++){
@@ -19,6 +32,7 @@ const namesStartWithChar = (char, array) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(namesStartWithChar(userInput, names));
+console.log(startWithChar(userInput, names));
 
 
 

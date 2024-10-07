@@ -17,8 +17,20 @@ function takeFirst(array){
     return newArray
 }
 
+const takeFirstArrow = array => {
+    let firsts = []
+    
+    for (let i = 0; i < array.length; i++){
+        firsts.push(array[i][0])
+    }
+
+    return firsts
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 const firstChars = takeFirst(names)
 console.log(firstChars)
+
+console.log(takeFirstArrow(names))
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
